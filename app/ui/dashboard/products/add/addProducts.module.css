@@ -1,0 +1,114 @@
+/* Container styling */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #007bff;
+    transition: transform 0.4s ease;
+    animation: fadeIn 2s ease;
+  }
+  
+  .container:hover {
+    /* Scale the container slightly */
+    transform: scale(1.05) rotate(2deg);
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  /* Keyframes for the hover pulse animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 20px #007bff;
+    }
+    50% {
+      box-shadow: 0px 0 40px #1784f8;
+    }
+    100% {
+      box-shadow: 0px 0px 20px #66b0ff;
+    }
+  }
+  /* Keyframes for initial fade-in effect */
+    @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Apply the animation to the hover state */
+ 
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input, select, and textarea field styling */
+  .inputField, .selectField, .textareaField {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  
+  .selectField {
+    height: 45px;
+    color: grey;
+  }
+  .selectField:focus{
+    color: white;
+  }
+  
+  .textareaField {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Button styling */
+  .submitButton {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  /* Button hover effect */
+  .submitButton:hover {
+    background-color: #66b0ff;
+    font-size: 18px;
+    transition: background-color 1s ease, font-size 2s ease;
+  }
+  /* Button active effect */
+  .submitButton:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .inputField, .selectField, .textareaField {
+      font-size: 14px;
+    }
+  
+    .submitButton {
+      font-size: 14px;
+    }
+  }
+  

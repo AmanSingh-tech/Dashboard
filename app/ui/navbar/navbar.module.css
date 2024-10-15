@@ -1,0 +1,81 @@
+.container {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--bgSec);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgb(46, 115, 194);
+    transition: background-color 0.3s ease;
+}
+
+.container:hover {
+    background-color: #1f1d1d;
+}
+
+.title {
+    color: var(--textSec);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #2e374a;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.search:hover {
+    background-color: #394455;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 1rem;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.input:focus {
+    outline: none;
+    width: 250px;
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+}
+
+.icons > * {
+    cursor: pointer;
+    transition: color 1s ease;
+}
+.icons > *:hover {
+    color: rgb(0, 153, 255); /* Bright blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    animation: bounce 0.3s ease-in-out;
+}
+
+/* Bounce effect for icons */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}

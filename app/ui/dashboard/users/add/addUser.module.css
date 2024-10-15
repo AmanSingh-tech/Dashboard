@@ -1,0 +1,105 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #007bff;
+  }
+  
+  .container:hover {
+    transform: scale(1.05) rotate(2deg);
+    animation: boxShadowAnimation 1s ease infinite;
+  }
+  
+  /* Keyframes for box-shadow animation */
+  @keyframes boxShadowAnimation {
+    0%{
+        box-shadow: 0px 0px 20px #007bff;
+    }
+    33.33% {
+      box-shadow: 10px 0 10px #1784f8; /* First box shadow */
+    }
+    100% {
+      box-shadow: 8px 10px 10px #66b0ff; /* Second box shadow */
+    }
+  }  
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input, .select, .textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    font-size: 16px;
+  }
+  
+  .select {
+    height: 40px;
+  }
+  
+  .textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .button:hover {
+    background-color: #66b0ff;
+    font-size: 18px;
+    transition: background-color 1s ease;
+    transition: font-size 2s ease infinite;
+  }
+  
+  .button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .input, .select, .textarea {
+      font-size: 14px;
+    }
+  
+    .button {
+      font-size: 14px;
+    }
+  }
+  
+  /*.container:hover {
+    animation: boxShadowAnimation 1s ease infinite;
+  }
+  
+  /* Keyframes for box-shadow animation 
+  @keyframes boxShadowAnimation {
+    0%{
+        box-shadow: 0px 0px 20px #007bff;
+    }
+    33.33% {
+      box-shadow: 10px 0 10px #1784f8; /* First box shadow 
+    }
+    100% {
+      box-shadow: 8px 10px 10px #66b0ff; /* Second box shadow 
+    }
+  }  */

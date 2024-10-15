@@ -1,0 +1,84 @@
+.container {
+    padding: 20px;
+  }
+  
+  .addButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.15); 
+  }
+  .addButton:active {
+    transform: scale(0.98); 
+  }
+  .addButton:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px #007bff;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .thead {
+    background-color: black;
+  }
+  
+  .tableRow {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tableRow img {
+    margin-right: 10px;
+    background-color: #141414;
+  }
+  .actionButton {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actionButton:hover {
+    background-color: #5a6268;
+  }
+  
+  .deleteButton {
+    background-color: #dc3545;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c82333;
+  }
+  
+  .viewButton {
+    background-color: #28a745;
+  }
+  
+  .viewButton:hover {
+    background-color: #218838;
+  }
